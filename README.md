@@ -37,3 +37,9 @@
 #### Fontfamily:
 - Figtree
 - Public Sans
+
+
+## REQUIREMENTS
+** *npm install* to get node_modules folder **
+
+*THANKS.*
