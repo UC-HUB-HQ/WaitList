@@ -40,6 +40,9 @@
 
 
 ## REQUIREMENTS
+** *You need to install node if you don't have it* **
 ** *npm install* to get node_modules folder **
+** *npm run build-css* to start tailwind **
+
 
 *THANKS.*

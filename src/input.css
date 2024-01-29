@@ -11,3 +11,11 @@
 .heroPtag{
     @apply text-black-100 w-[82%] leading-7
 }
+
+.smallHeroImg{
+    @apply object-cover w-full h-full rounded-full
+}
+
+.heroImgContainer{
+    @apply aspect-square rounded-full border-primary-200 border-2
+}
