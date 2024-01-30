@@ -887,3 +887,23 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(47 124 242 / var(--tw-border-opacity));
 }
+.style{
+  background-color: #9A5A5A;
+  width: 100%;
+}
+input{
+  width: 100%;
+  margin: 20px;
+  height: 60px;
+  /* outline: transparent; */
+  color: transparent;
+  background-color: #8686863D;
+}
+.btn-1{
+  border-radius: 5px;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 8px, 22px, 8px, 22px;
+  height: 40px;
+  width: 150px;
+}
