@@ -924,3 +924,14 @@ input{
   width: 80%;
   margin-left: 130px;
 }
+footer{
+  background-color: #9A5A5A;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 90px;
+  position: relative;
+}
+.foot {
+  /* padding-top: 2px; */
+  /* position: fixed; */
+}
