@@ -917,3 +917,13 @@ input{
   padding-top: 80px;
   padding-bottom: 130px;
 }
+.style3{
+  padding-top: 80px;
+  padding-bottom: 130px;
+  margin-top: -40px;
+  background-color: #D9D9D9;
+  width: 80%;
+  margin-right: 40px;
+  /* justify-items: center; */
+  /* align-items: center; */
+}
