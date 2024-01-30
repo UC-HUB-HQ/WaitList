@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.{html,js}"],
+  content: ["./dist/**/*.{html,js}"],
   theme: {
     extend: {
       fontFamily:{
@@ -17,6 +17,7 @@ module.exports = {
           "500": "#033178",
           "600": "#022150",
           "ContactBg": "rgba(205, 224, 252, 0.30",
+          'formBg': "rgba(205, 224, 252, 0.30)"
         },
         "secondary": {
           "100": "#CC7306",
@@ -25,9 +26,11 @@ module.exports = {
         },
         "tertiary": {
           "100": "#310A31",
+          "200": "#190519"
         },
         "black": {
           "100": "#313031",
+          "200": "rgba(186, 173, 186, 0.71)",
           "bodyBgColor": "#F3F2F2",
           "copyrigh": "rgba(186, 173, 186, 0.71",
         }

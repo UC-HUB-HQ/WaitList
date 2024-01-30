@@ -19,3 +19,7 @@
 .heroImgContainer{
     @apply aspect-square rounded-full border-primary-200 border-2
 }
+
+.inputFields{
+    @apply h-[60px] placeholder-primary-600 rounded-r-full rounded-l-full px-4 outline-none cursor-pointer
+}
