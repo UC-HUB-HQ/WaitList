@@ -664,6 +664,18 @@ video {
   margin-top: 2rem;
 }
 
+.mb-8{
+  margin-bottom: 2rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mt-24{
+  margin-top: 6rem;
+}
+
 .flex{
   display: flex;
 }
@@ -812,6 +824,10 @@ video {
   gap: 2rem;
 }
 
+.gap-0{
+  gap: 0px;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -887,14 +903,6 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'\.\/Assets\/Graduate\.jpg\'\)\]{
-  background-image: url('./Assets/Graduate.jpg');
-}
-
-.bg-\[url\(\'\.\/Assets\/study-group-3-african-people\.jpg\'\)\]{
-  background-image: url('./Assets/study-group-3-african-people.jpg');
 }
 
 .bg-\[url\(\'\.\/Assets\/Graduate\.webp\'\)\]{
@@ -1099,6 +1107,7 @@ video {
   padding-right: 1.25rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  font-family: Figtree;
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
