@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .btn{
-    @apply px-5 py-3 text-sm text-white rounded-l-full rounded-r-full bg-primary-100
+    @apply px-5 py-3 text-sm text-white rounded-l-full rounded-r-full bg-primary-100 font-body1
 }
 
 .heroPtag{
