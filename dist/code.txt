@@ -1,3 +1,0 @@
-        <section class="relative w-[50%] rounded-[100px] overflow-hidden  flex justify-center items-center  ">
-          <div class="absolute bg-[url('./Assets/study-group-3-african-people.webp')] bg-no-repeat bg-cover bg-[center_right_-2rem]  h-[650px] w-[650px] rounded-full ml-28"></div>
-        </section>
