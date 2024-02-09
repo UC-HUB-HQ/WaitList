@@ -646,6 +646,10 @@ video {
   margin-top: 7rem;
 }
 
+.mt-3{
+  margin-top: 0.75rem;
+}
+
 .mt-4{
   margin-top: 1rem;
 }
@@ -718,6 +722,18 @@ video {
   height: 100vh;
 }
 
+.h-\[600px\]{
+  height: 600px;
+}
+
+.h-\[650px\]{
+  height: 650px;
+}
+
+.h-\[700px\]{
+  height: 700px;
+}
+
 .w-36{
   width: 9rem;
 }
@@ -756,6 +772,22 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-\[6050px\]{
+  width: 6050px;
+}
+
+.w-\[600px\]{
+  width: 600px;
+}
+
+.w-\[650px\]{
+  width: 650px;
+}
+
+.w-\[700px\]{
+  width: 700px;
 }
 
 .cursor-pointer{
@@ -900,6 +932,24 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-red-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
+}
+
+.bg-\[center_right_rem\]{
+  background-color: center right rem;
+}
+
+.bg-\[center_top_rem\]{
+  background-color: center top rem;
+}
+
+.bg-red-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-40{
   --tw-bg-opacity: 0.4;
 }
@@ -922,6 +972,34 @@ video {
 
 .bg-\[center_top_-10rem\]{
   background-position: center top -10rem;
+}
+
+.bg-\[center_right_-6rem\]{
+  background-position: center right -6rem;
+}
+
+.bg-\[center_right_1rem\]{
+  background-position: center right 1rem;
+}
+
+.bg-\[center_right_2rem\]{
+  background-position: center right 2rem;
+}
+
+.bg-\[center_right_10rem\]{
+  background-position: center right 10rem;
+}
+
+.bg-\[center_right_-4rem\]{
+  background-position: center right -4rem;
+}
+
+.bg-\[center_top_2rem\]{
+  background-position: center top 2rem;
+}
+
+.bg-\[center_top_-5rem\]{
+  background-position: center top -5rem;
 }
 
 .bg-no-repeat{
@@ -977,6 +1055,11 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pb-4{
@@ -1046,6 +1129,10 @@ video {
   font-weight: 600;
 }
 
+.uppercase{
+  text-transform: uppercase;
+}
+
 .leading-\[1\.3em\]{
   line-height: 1.3em;
 }
@@ -1101,6 +1188,25 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #cde0fcd7;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  cursor: pointer;
 }
 
 .btn{
@@ -1168,4 +1274,8 @@ video {
 .inputFields{
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.evft{
+  color: rgba(205, 224, 252, 0.858);
 }
