@@ -21,11 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Header Text animation
     const dynamicHeaderText = document.querySelector('#dynamicHeaderText');
     const dynamicHeaderTextSelection = ["No more failure", "Earn as a student", "Improve your skills", "Optimize your time"]
+    let firstAnimationDone = false;
     let currentIndex = 1;
+    console.log(firstAnimationDone)
     setInterval( () => {
+        firstAnimationDone = true
         currentIndex = (currentIndex + 1) % dynamicHeaderTextSelection.length
         changeTextWithAnimation(dynamicHeaderText, dynamicHeaderTextSelection, currentIndex)
-    }, 2500);
+        console.log(firstAnimationDone)
+    }, 5000);
 
 
     // Questions Text animation
@@ -41,11 +45,15 @@ document.addEventListener('DOMContentLoaded', () => {
         changeTextWithAnimation(dynamicQuestionElement, dynamicQuestions, questionAnswerCount)
         // 
         changeTextWithAnimation(dynamicAnswerElement, dynamicAnswers, questionAnswerCount)
-    }, 3000);
+    }, 5000);
 
 
 
 
+
+
+
+    
     // REVEALING FAQ QUESTION'S ANSWER;
 
     const faqDropDowns = document.querySelectorAll('.faqDropDown');
@@ -72,18 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
     })
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 })

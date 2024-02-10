@@ -48,3 +48,7 @@ html{
 .evft{
     color: rgba(205, 224, 252, 0.858);
 }
+
+.submitBtn{
+    @apply px-5 py-4 text-sm text-white rounded-l-full rounded-r-full bg-primary-100 font-body1
+}
