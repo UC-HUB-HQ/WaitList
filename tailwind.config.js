@@ -5,8 +5,8 @@ module.exports = {
     extend: {
 
       animation: {
-				newContent: 'fadeIn 0.5s linear',
-        animated: 'fadeOut 0.5s  linear',
+				newContent: 'fadeIn 1s linear',
+        animated: 'fadeOut 1s  linear',
 			},
 
 			keyframes: {

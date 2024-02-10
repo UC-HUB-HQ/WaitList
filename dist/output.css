@@ -762,6 +762,11 @@ video {
   width: 100%;
 }
 
+.rotate-180{
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 @keyframes fadeOut{
   from{
     opacity: 1;
@@ -773,7 +778,7 @@ video {
 }
 
 .animate-animated{
-  animation: fadeOut 0.5s  linear;
+  animation: fadeOut 1s  linear;
 }
 
 @keyframes fadeIn{
@@ -787,7 +792,7 @@ video {
 }
 
 .animate-newContent{
-  animation: fadeIn 0.5s linear;
+  animation: fadeIn 1s linear;
 }
 
 .cursor-pointer{
@@ -800,6 +805,14 @@ video {
 
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-\[0fr\]{
+  grid-template-rows: 0fr;
+}
+
+.grid-rows-\[1fr\]{
+  grid-template-rows: 1fr;
 }
 
 .flex-col{
@@ -1137,6 +1150,28 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-\[800ms\]{
+  transition-duration: 800ms;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 /* width */

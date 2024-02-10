@@ -10,25 +10,14 @@
   <script src="index.js"></script>
 </head>
 <body class="relative bg-black-bodyBgColor">
-  <!-- MODAL SECTION -->
-  <section class="fixed z-50 items-center justify-center hidden w-full h-screen bg-gray-900 modal bg-opacity-40">
-    <div class="bg-white w-[40%] p-5">
-      <h2 class="mb-4 text-3xl font-bold text-center font-body1">Helloo World</h2>
-      <p class="font-medium text-center font-body2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis veniam ut minus cumque alias. Veniam eius debitis libero reprehenderit provident minima facere!</p>
-      <div class="flex items-center justify-center mt-8">
-        <button class="btn"> Close</button>
-      </div>
-    </div>
-  </section>
-  <!-- MODAL END -->
-    <!-- HEADER -->
+  <!-- HEADER -->
   <header class="flex items-center justify-between px-12 py-6">
       <div>
         <img class="cursor-pointer" src="./Assets//uc hub logo.svg" alt="U.C HUB LOGO" loading="lazy">
       </div>
       <div>
         <button class="btn">
-          <a href="">Join the Waitlist</a>
+          <a href="#waitlist">Join the Waitlist</a>
         </button>
       </div>
   </header>
@@ -46,7 +35,7 @@
         </div>
         <div class="mt-16">
           <button class="btn font-body1">
-            <a href="">Join the Waitlist</a>
+            <a href="#waitlist">Join the Waitlist</a>
           </button>
         </div>
       </div>
@@ -80,7 +69,7 @@
             <h3 class="mt-5 text-xl font-medium text-white">Join us as a student or coach.</h3>
             <div class="mt-10">
               <button class="btn">
-                <a href="">Join the Waitlist</a>
+                <a href="#waitlist">Join the Waitlist</a>
               </button>
             </div>
           </div>
@@ -108,7 +97,7 @@
       </div>
       <div class="flex items-center justify-center mt-12 ">
         <button class="btn">
-          <a href="">Join the Waitlist</a>
+          <a href="#waitlist">Join the Waitlist</a>
         </button>
       </div>
   </section>
@@ -166,12 +155,12 @@
       <section class=" mt-28 secFooter font-body1">
         <h5 class="mb-10">YEAH, YOU SHOULD JOIN US AT UC HUB</h5>
         <h2 class="flex flex-col gap-3 text-3xl">
-          <span class="font-medium text-black-100">Just need help studying for that exam?</span>
-          <span class="font-medium text-primary-300">We’ve got a coach for you.</span>
+          <span class="font-medium text-black-100" id="question">Just need help studying for that exam?</span>
+          <span class="font-medium text-primary-300" id="answer">We’ve got a coach for you.</span>
         </h2>
         <div class="mt-12">
           <button class="btn">
-            <a href="">Join the Waitlist</a>
+            <a href="#waitlist">Join the Waitlist</a>
           </button>
         </div>
       </section>
@@ -203,7 +192,7 @@
             </h6>
             <div class="mt-8">
               <button class="px-5 py-3 text-sm text-white rounded-l-full rounded-r-full bg-tertiary-100">
-                <a href="">Join The Waitlist</a>
+                <a href="#waitlist">Join The Waitlist</a>
               </button>
             </div>
           </div>
@@ -224,30 +213,46 @@
         <section class="border-b-2 border-[#e1e0e1] mb-6 pb-4">
           <div class="flex items-center justify-between">
             <h6>Question 1</h6>
-            <img class="cursor-pointer" src="./Assets/_Button_dropdown_.svg" alt="upside down button" loading="lazy">
+            <img data-id="1" class="transition cursor-pointer duration-[800ms] faqDropDown " src="./Assets/_Button_dropdown_.svg" alt="upside down button" loading="lazy">
           </div>
-          <div></div>
+          <div id="faq1" class="grid grid-rows-[0fr] transition-all duration-[800ms]">
+            <div class="overflow-hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis incidunt voluptatem mollitia corrupti, itaque aliquid saepe ad quas voluptatum, consequuntur explicabo totam quod? Fugit dolore itaque aspernatur ipsam impedit ducimus.
+            </div>
+          </div>
         </section>
         <section class="border-b-2 border-[#e1e0e1] mb-6 pb-4">
           <div class="flex items-center justify-between">
             <h6>Question 2</h6>
-            <img class="cursor-pointer" src="./Assets/_Button_dropdown_.svg" alt="upside down button" loading="lazy">
+            <img data-id="2" class="transition cursor-pointer duration-[800ms] faqDropDown " src="./Assets/_Button_dropdown_.svg" alt="upside down button" loading="lazy">
           </div>
-          <div></div>
+          <div id="faq2" class="grid grid-rows-[0fr] transition-all duration-[800ms]">
+            <div class="overflow-hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis incidunt voluptatem mollitia corrupti, itaque aliquid saepe ad quas voluptatum, consequuntur explicabo totam quod? Fugit dolore itaque aspernatur ipsam impedit ducimus.
+            </div>
+          </div>
         </section>
         <section class="border-b-2 border-[#e1e0e1] mb-6 pb-4">
           <div class="flex items-center justify-between">
             <h6>Question 3</h6>
-            <img class="cursor-pointer" src="./Assets/_Button_dropdown_.svg" alt="upside down button" loading="lazy">
+            <img data-id="3" class="transition cursor-pointer duration-[800ms] faqDropDown " src="./Assets/_Button_dropdown_.svg" alt="upside down button" loading="lazy">
           </div>
-          <div></div>
+          <div id="faq3" class="grid grid-rows-[0fr] transition-all duration-[800ms]">
+            <div class="overflow-hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis incidunt voluptatem mollitia corrupti, itaque aliquid saepe ad quas voluptatum, consequuntur explicabo totam quod? Fugit dolore itaque aspernatur ipsam impedit ducimus.
+            </div>
+          </div>
         </section>
         <section class="border-b-2 border-[#e1e0e1] mb-6 pb-4">
           <div class="flex items-center justify-between">
             <h6>Question 4</h6>
-            <img class="cursor-pointer" src="./Assets/_Button_dropdown_.svg" alt="upside down button" loading="lazy">
+            <img data-id="4" class="transition cursor-pointer duration-[800ms] faqDropDown " src="./Assets/_Button_dropdown_.svg" alt="upside down button" loading="lazy">
           </div>
-          <div></div>
+          <div id="faq4" class="grid grid-rows-[0fr] transition-all duration-[800ms]">
+            <div class="overflow-hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis incidunt voluptatem mollitia corrupti, itaque aliquid saepe ad quas voluptatum, consequuntur explicabo totam quod? Fugit dolore itaque aspernatur ipsam impedit ducimus.
+            </div>
+          </div>
         </section>
       </div>
   </section>
