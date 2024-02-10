@@ -722,10 +722,6 @@ video {
   height: 100vh;
 }
 
-.w-36{
-  width: 9rem;
-}
-
 .w-\[100\%\]{
   width: 100%;
 }
@@ -1262,4 +1258,22 @@ html{
 
 .evft{
   color: rgba(205, 224, 252, 0.858);
+}
+
+.submitBtn{
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 98 239 / var(--tw-bg-opacity));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: Figtree;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
