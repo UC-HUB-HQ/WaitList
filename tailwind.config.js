@@ -3,11 +3,30 @@ module.exports = {
   content: ["./dist/**/*.{html,js}"],
   theme: {
     extend: {
+
+      animation: {
+				newContent: 'fadeIn 1s linear',
+        animated: 'fadeOut 1s  linear',
+			},
+
+			keyframes: {
+				fadeIn: {
+					from: { opacity: 0 },
+					to: { opacity: 1 },
+				},
+
+        fadeOut: {
+          from: { opacity: 1 },
+					to: { opacity: 0 },
+        }
+			},
+
       fontFamily:{
         "body1": ["Figtree"],
         "body2": ["Public Sans"]
 
       },
+
       colors:{
         "primary": {
           "100": "#0562EF",
@@ -35,6 +54,7 @@ module.exports = {
           "copyrigh": "rgba(186, 173, 186, 0.71",
         }
       }
+
     },
   },
   plugins: [],

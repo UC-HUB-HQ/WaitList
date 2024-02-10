@@ -4,33 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Struggling with Uni in Nigeria? Join U.C. Hub's waitlist and secure your spot for personalized tutoring with rockstar tutors who GET IT! Don't wait, sign up today! ➡️">
+  <title>U.C HUB WAITLIST</title>
   <link href="output.css" rel="stylesheet">
   <link rel="shortcut icon" href="Assets/favicon-16x16.png" type="image/x-icon">
-  <title>U.C HUB WAITLIST</title>
-  <script>
-    var submitted = false
-  </script>
+  <script src="index.js"></script>
 </head>
 <body class="relative bg-black-bodyBgColor">
-  <!-- MODAL SECTION -->
-  <section class="fixed z-50 items-center justify-center hidden w-full h-screen bg-gray-900 modal bg-opacity-40">
-    <div class="bg-white w-[40%] p-5">
-      <h2 class="mb-4 text-3xl font-bold text-center font-body1">Helloo World</h2>
-      <p class="font-medium text-center font-body2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis veniam ut minus cumque alias. Veniam eius debitis libero reprehenderit provident minima facere!</p>
-      <div class="flex items-center justify-center mt-8">
-        <button class="btn"> Close</button>
-      </div>
-    </div>
-  </section>
-  <!-- MODAL END -->
-    <!-- HEADER -->
+  <!-- HEADER -->
   <header class="flex items-center justify-between px-12 py-6">
       <div>
         <img class="cursor-pointer" src="./Assets//uc hub logo.svg" alt="U.C HUB LOGO" loading="lazy">
       </div>
       <div>
         <button class="btn">
-          <a href="">Join the Waitlist</a>
+          <a href="#waitlist">Join the Waitlist</a>
         </button>
       </div>
   </header>
@@ -39,7 +26,7 @@
   <main class="flex justify-between items-center pt-[3em] px-12 "> 
       <div class="w-[50%] hero-left ">
         <h1 class="flex flex-col gap-3 text-6xl font-bold font-body1">
-          <span class="text-primary-500">No more failure</span>
+          <span class="text-primary-500" id="dynamicHeaderText">No more failure</span>
           <span class="text-primary-600">with U.C Hub</span>
         </h1>
         <div class="flex flex-col gap-2 mt-8 font-body2">
@@ -48,7 +35,7 @@
         </div>
         <div class="mt-16">
           <button class="btn font-body1">
-            <a href="">Join the Waitlist</a>
+            <a href="#waitlist">Join the Waitlist</a>
           </button>
         </div>
       </div>
@@ -82,7 +69,7 @@
             <h3 class="mt-5 text-xl font-medium text-white">Join us as a student or coach.</h3>
             <div class="mt-10">
               <button class="btn">
-                <a href="">Join the Waitlist</a>
+                <a href="#waitlist">Join the Waitlist</a>
               </button>
             </div>
           </div>
@@ -100,17 +87,17 @@
           <h4 class="mt-1 text-xl font-medium text-black-100">Provide Academic Tutoring</h4>
         </section>
         <section class="flex flex-col items-center justify-center">
-          <img class="rounded-full" src="./Assets/achievement gaps.svg" alt="U.C Hub " loading="lazy">
+          <img class="rounded-full" src="./Assets/career mentoring.svg" alt="U.C Hub mentoring" loading="lazy">
           <h4 class="mt-1 text-xl font-medium text-black-100">Provide Career Mentoring</h4>
         </section>
         <section class="flex flex-col items-center justify-center">
-          <img class="rounded-full" src="./Assets/career mentoring.svg" alt="U.C Hub mentoring" loading="lazy">
+          <img class="rounded-full" src="./Assets/achievement gaps.svg" alt="U.C Hub " loading="lazy">
           <h4 class="mt-1 text-xl font-medium text-black-100">Bridge Achievement Gaps</h4>
         </section>
       </div>
       <div class="flex items-center justify-center mt-12 ">
         <button class="btn">
-          <a href="">Join the Waitlist</a>
+          <a href="#waitlist">Join the Waitlist</a>
         </button>
       </div>
   </section>
@@ -168,12 +155,12 @@
       <section class=" mt-28 secFooter font-body1">
         <h5 class="mb-10">YEAH, YOU SHOULD JOIN US AT UC HUB</h5>
         <h2 class="flex flex-col gap-3 text-3xl">
-          <span class="font-medium text-black-100">Just need help studying for that exam?</span>
-          <span class="font-medium text-primary-300">We’ve got a coach for you.</span>
+          <span class="font-medium text-black-100" id="question">Just need help studying for that exam?</span>
+          <span class="font-medium text-primary-300" id="answer">We’ve got a coach for you.</span>
         </h2>
         <div class="mt-12">
           <button class="btn">
-            <a href="">Join the Waitlist</a>
+            <a href="#waitlist">Join the Waitlist</a>
           </button>
         </div>
       </section>
@@ -191,27 +178,27 @@
   <!--  -->
   <!--  -->
   <section class="relative py-10 my-32 overflow-hidden bg-secondary-100">
-      <div class=" flex justify-between rounded-[100px] bg-secondary-300 w-[85%] mx-auto">
+      <div class=" flex justify-between overflow-hidden rounded-[100px] bg-secondary-300 w-[85%] mx-auto">
         <section class="w-[50%] py-12 ">
           <div class="w-[80%] ml-auto "> 
             <div class="font-body1">
-              <h5 class="text-xl font-medium text-tertiary-100">coach with us</h5>
-              <h2 class="text-4xl font-semibold text-tertiary-200 w-[80%] mt-5">
+              <h5 class="text-xl font-medium uppercase text-tertiary-100">coach with us</h5>
+              <h2 class="text-4xl font-semibold text-tertiary-200 w-[80%] mt-4">
                 Make impactful use of your brilliance and resourcefulness
               </h2>
             </div>
-            <h6 class="font-medium text-tertiary-200 font-body2 w-[70%] mt-2">
+            <h6 class="font-medium text-tertiary-200 font-body2 w-[70%] mt-3 nvc">
               Contribute to the success of your junior colleagues by joining uc hub as a tutor to provide personalized help to college students.
             </h6>
             <div class="mt-8">
               <button class="px-5 py-3 text-sm text-white rounded-l-full rounded-r-full bg-tertiary-100">
-                <a href="">Join The Waitlist</a>
+                <a href="#waitlist">Join The Waitlist</a>
               </button>
             </div>
           </div>
         </section>
-        <section class="relative w-[50%] rounded-[100px]  flex justify-center items-center overflow-hidden">
-          <div class="absolute bg-[url('./Assets/study-group-3-african-people.webp')] bg-no-repeat bg-cover bg-[center_right_-2rem]  h-[550px] w-[550px] rounded-full ml-28"></div>
+        <section class="relative w-[50%]  flex justify-center items-center ">
+          <div class="absolute bg-[url('./Assets/study-group-3-african-people.webp')] bg-no-repeat bg-cover bg-[center_right_-2rem]  h-[700px] w-[700px] rounded-full ml-28"></div>
         </section>
       </div>
   </section>
@@ -226,37 +213,53 @@
         <section class="border-b-2 border-[#e1e0e1] mb-6 pb-4">
           <div class="flex items-center justify-between">
             <h6>Question 1</h6>
-            <img class="cursor-pointer" src="./Assets/_Button_dropdown_.svg" alt="upside down button" loading="lazy">
+            <img data-id="1" class="transition cursor-pointer duration-[800ms] faqDropDown " src="./Assets/_Button_dropdown_.svg" alt="upside down button" loading="lazy">
           </div>
-          <div></div>
+          <div id="faq1" class="grid grid-rows-[0fr] transition-all duration-[800ms]">
+            <div class="overflow-hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis incidunt voluptatem mollitia corrupti, itaque aliquid saepe ad quas voluptatum, consequuntur explicabo totam quod? Fugit dolore itaque aspernatur ipsam impedit ducimus.
+            </div>
+          </div>
         </section>
         <section class="border-b-2 border-[#e1e0e1] mb-6 pb-4">
           <div class="flex items-center justify-between">
             <h6>Question 2</h6>
-            <img class="cursor-pointer" src="./Assets/_Button_dropdown_.svg" alt="upside down button" loading="lazy">
+            <img data-id="2" class="transition cursor-pointer duration-[800ms] faqDropDown " src="./Assets/_Button_dropdown_.svg" alt="upside down button" loading="lazy">
           </div>
-          <div></div>
+          <div id="faq2" class="grid grid-rows-[0fr] transition-all duration-[800ms]">
+            <div class="overflow-hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis incidunt voluptatem mollitia corrupti, itaque aliquid saepe ad quas voluptatum, consequuntur explicabo totam quod? Fugit dolore itaque aspernatur ipsam impedit ducimus.
+            </div>
+          </div>
         </section>
         <section class="border-b-2 border-[#e1e0e1] mb-6 pb-4">
           <div class="flex items-center justify-between">
             <h6>Question 3</h6>
-            <img class="cursor-pointer" src="./Assets/_Button_dropdown_.svg" alt="upside down button" loading="lazy">
+            <img data-id="3" class="transition cursor-pointer duration-[800ms] faqDropDown " src="./Assets/_Button_dropdown_.svg" alt="upside down button" loading="lazy">
           </div>
-          <div></div>
+          <div id="faq3" class="grid grid-rows-[0fr] transition-all duration-[800ms]">
+            <div class="overflow-hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis incidunt voluptatem mollitia corrupti, itaque aliquid saepe ad quas voluptatum, consequuntur explicabo totam quod? Fugit dolore itaque aspernatur ipsam impedit ducimus.
+            </div>
+          </div>
         </section>
         <section class="border-b-2 border-[#e1e0e1] mb-6 pb-4">
           <div class="flex items-center justify-between">
             <h6>Question 4</h6>
-            <img class="cursor-pointer" src="./Assets/_Button_dropdown_.svg" alt="upside down button" loading="lazy">
+            <img data-id="4" class="transition cursor-pointer duration-[800ms] faqDropDown " src="./Assets/_Button_dropdown_.svg" alt="upside down button" loading="lazy">
           </div>
-          <div></div>
+          <div id="faq4" class="grid grid-rows-[0fr] transition-all duration-[800ms]">
+            <div class="overflow-hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis incidunt voluptatem mollitia corrupti, itaque aliquid saepe ad quas voluptatum, consequuntur explicabo totam quod? Fugit dolore itaque aspernatur ipsam impedit ducimus.
+            </div>
+          </div>
         </section>
       </div>
   </section>
   <!-- FAQ END -->
   <!-- WAITLIST FORM -->
-  <section class="flex items-center justify-between px-12 my-32">
-      <div class="flex items-start justify-between p-14 rounded-3xl bg-primary-formBg">
+  <section id="waitlist" class="flex items-center justify-between px-12 my-32 ">
+      <div class="flex items-start justify-between w-full mx-auto rounded-3xl p-14 bg-primary-formBg">
         <div class="w-[50%]">
           <h1 class="text-5xl font-semibold leading-[1.3em] w-[80%] text-primary-100">Begin your journey to academic excellence</h1>
           <h4 class="mt-4 text-2xl text-primary-100">Get notified when we launch</h4>

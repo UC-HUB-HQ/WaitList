@@ -4,6 +4,27 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #cde0fcd7;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    cursor: pointer;
+}
+  
+
 .btn{
     @apply px-5 py-3 text-sm text-white rounded-l-full rounded-r-full bg-primary-100 font-body1
 }
@@ -22,4 +43,8 @@
 
 .inputFields{
     @apply h-[60px] placeholder-primary-600 rounded-r-full rounded-l-full px-4 outline-none cursor-pointer
+}
+
+.evft{
+    color: rgba(205, 224, 252, 0.858);
 }
