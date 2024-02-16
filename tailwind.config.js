@@ -2,6 +2,28 @@
 module.exports = {
   content: ["./dist/**/*.{html,js}"],
   theme: {
+
+    screens: {
+      'xlg': {'max': '1920px'},
+      // => @media (max-width: 1920px) { ... }
+      'lg': {'max': '1440px'},
+      // => @media (max-width: 1440px) { ... }
+      'md': {'max': '1030px'},
+      // => @media (max-width: 1030px) { ... }
+      'tab': {'max': '768px'},
+      // => @media (max-width: 768px) { ... }
+      'tab-sm': {'max': '600px'},
+      // => @media (max-width: 600px) { ... }
+      'mobile': {'max': '360px'},
+      // => @media (max-width: 360px) { ... }
+    },
+
+    fontFamily:{
+      "body1": ["Figtree"],
+      "body2": ["Public Sans"]
+
+    },
+
     extend: {
 
       animation: {
@@ -20,12 +42,6 @@ module.exports = {
 					to: { opacity: 0 },
         }
 			},
-
-      fontFamily:{
-        "body1": ["Figtree"],
-        "body2": ["Public Sans"]
-
-      },
 
       colors:{
         "primary": {
@@ -59,4 +75,10 @@ module.exports = {
   },
   plugins: [],
 }
+
+
+
+
+
+
 

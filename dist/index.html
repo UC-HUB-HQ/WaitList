@@ -7,7 +7,10 @@
   <title>U.C HUB WAITLIST</title>
   <link href="output.css" rel="stylesheet">
   <link rel="shortcut icon" href="Assets/favicon-16x16.png" type="image/x-icon">
-  <link rel="preload" href="./Assets/Graduate.webp">
+  
+  <link rel="preload" href="./Assets/Graduate.webp" as="image">
+  <link rel="preload" href="./Assets/study-group-3-african-people.webp" as="image">
+  
   <script src="index.js"></script>
 </head>
 <body class="relative bg-black-bodyBgColor">
@@ -44,7 +47,9 @@
         <!--  -->
         <section class="flex items-center justify-center">
           <div class="h-[540px] heroImgContainer p-[100px] bg-white flex items-center justify-center">
-            <div class="relative h-[530px] aspect-square rounded-full bg-[center_top_-10rem] bg-no-repeat bg-[url('./Assets/Graduate.webp')]"></div>
+            <div class="relative h-[530px] aspect-square rounded-full bg-[center_top_-10rem] bg-no-repeat bg-[url('./Assets/Graduate.webp')]">
+              <img src="./Assets/Graduate.webp" class="hidden" alt="U.C Hub high achievers">
+            </div>
           </div>
         </section>
         <!--  -->
@@ -200,6 +205,7 @@
         </section>
         <section class="relative w-[50%]  flex justify-center items-center ">
           <div class="absolute bg-[url('./Assets/study-group-3-african-people.webp')] bg-no-repeat bg-cover bg-[center_right_-2rem]  h-[700px] w-[700px] rounded-full ml-28"></div>
+          <img src="./Assets/study-group-3-african-people.webp" class="hidden" alt="U.C HUB TUTORS">
         </section>
       </div>
   </section>
