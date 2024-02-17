@@ -45,6 +45,10 @@ html{
     @apply h-[60px] placeholder-primary-600 rounded-r-full rounded-l-full px-4 outline-none cursor-pointer
 }
 
+.whyUcSections{
+    @apply grid items-center grid-cols-2 mt-16 font-body2 tab:hidden
+}
+
 .evft{
     color: rgba(205, 224, 252, 0.858);
 }
@@ -53,13 +57,43 @@ html{
     @apply px-5 py-4 text-sm text-white rounded-l-full rounded-r-full bg-primary-100 font-body1
 }
 .card{
-    @apply bg-secondary-cardBg
+    @apply bg-secondary-cardBg px-5 py-10 rounded-[60px] mb-14 flex-col items-center justify-center hidden gap-8 tab:flex
+}
+
+.cardHeader{
+    @apply text-3xl font-bold text-center font-body1 text-black-100 w-[60%] mobile:w-[80%] mobile:text-2xl smobile:w-[100%]
+}
+
+.cardImageContainer{
+    @apply w-[80%] mx-auto  mobile:w-[100%] 
+}
+
+.cardImage{
+    @apply w-full rounded-full aspect-square object-cover
 }
 
 .cardContentContainer{
-    @apply flex justify-center items-center flex-col gap-4 
+    @apply flex justify-center items-center flex-col gap-2
 }
 
 .cardContent1{
-    @apply text-center text-black-100 leading-[1.5em] text-xl tab:w-[80%]
+    @apply text-center text-black-100 leading-[1.5em] text-xl tab:w-[70%] font-semibold mobile:text-lg mobile:w-[100%] object-cover
 }
+
+.cardContent2{
+    @apply text-center text-black-100 leading-[1.5em] text-xl tab:w-[80%] font-semibold mobile:text-lg mobile:w-[100%] object-cover
+}
+
+.cardSp{
+    @apply bg-secondary-400 px-10 py-12 mb-14 flex-col items-center justify-center hidden gap-8 tab:flex
+}
+
+.cardHeader{
+    @apply text-3xl font-bold text-center font-body1 w-[40%] mobile:w-[80%] mobile:text-2xl smobile:w-[100%]
+}
+
+.cardContentSp{
+    @apply text-center text-tertiary-300 leading-[1.5em] text-xl tab:w-[70%] font-semibold mobile:text-lg mobile:w-[100%] object-cover
+}
+
+

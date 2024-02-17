@@ -760,10 +760,6 @@ video {
   width: 50%;
 }
 
-.w-\[60\%\]{
-  width: 60%;
-}
-
 .w-\[70\%\]{
   width: 70%;
 }
@@ -828,10 +824,6 @@ video {
 
 .cursor-pointer{
   cursor: pointer;
-}
-
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-3{
@@ -969,11 +961,6 @@ video {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
-.bg-green-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
-}
-
 .bg-primary-700{
   --tw-bg-opacity: 1;
   background-color: rgb(4 82 199 / var(--tw-bg-opacity));
@@ -981,6 +968,11 @@ video {
 
 .bg-primary-formBg{
   background-color: rgba(205, 224, 252, 0.30);
+}
+
+.bg-red-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
 }
 
 .bg-secondary-100{
@@ -995,6 +987,11 @@ video {
 .bg-secondary-300{
   --tw-bg-opacity: 1;
   background-color: rgb(253 232 205 / var(--tw-bg-opacity));
+}
+
+.bg-secondary-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 177 90 / var(--tw-bg-opacity));
 }
 
 .bg-tertiary-100{
@@ -1228,6 +1225,11 @@ video {
   color: rgb(25 5 25 / var(--tw-text-opacity));
 }
 
+.text-tertiary-300{
+  --tw-text-opacity: 1;
+  color: rgb(41 8 41 / var(--tw-text-opacity));
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1341,6 +1343,20 @@ html{
   outline-offset: 2px;
 }
 
+.whyUcSections{
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  font-family: Public Sans;
+}
+
+@media (max-width: 800px){
+  .whyUcSections{
+    display: none;
+  }
+}
+
 .evft{
   color: rgba(205, 224, 252, 0.858);
 }
@@ -1364,8 +1380,70 @@ html{
 }
 
 .card{
+  margin-bottom: 3.5rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border-radius: 60px;
   --tw-bg-opacity: 1;
-  background-color: rgb(94 19 19 / var(--tw-bg-opacity));
+  background-color: rgb(233 228 222 / var(--tw-bg-opacity));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media (max-width: 800px){
+  .card{
+    display: flex;
+  }
+}
+
+.cardHeader{
+  width: 60%;
+  text-align: center;
+  font-family: Figtree;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(49 48 49 / var(--tw-text-opacity));
+}
+
+@media (max-width: 430px){
+  .cardHeader{
+    width: 80%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 380px){
+  .cardHeader{
+    width: 100%;
+  }
+}
+
+.cardImageContainer{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+@media (max-width: 430px){
+  .cardImageContainer{
+    width: 100%;
+  }
+}
+
+.cardImage{
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  border-radius: 9999px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cardContentContainer{
@@ -1373,13 +1451,16 @@ html{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .cardContent1{
+  -o-object-fit: cover;
+     object-fit: cover;
   text-align: center;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  font-weight: 600;
   line-height: 1.5em;
   --tw-text-opacity: 1;
   color: rgb(49 48 49 / var(--tw-text-opacity));
@@ -1387,7 +1468,111 @@ html{
 
 @media (max-width: 800px){
   .cardContent1{
+    width: 70%;
+  }
+}
+
+@media (max-width: 430px){
+  .cardContent1{
+    width: 100%;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+.cardContent2{
+  -o-object-fit: cover;
+     object-fit: cover;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  line-height: 1.5em;
+  --tw-text-opacity: 1;
+  color: rgb(49 48 49 / var(--tw-text-opacity));
+}
+
+@media (max-width: 800px){
+  .cardContent2{
     width: 80%;
+  }
+}
+
+@media (max-width: 430px){
+  .cardContent2{
+    width: 100%;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+.cardSp{
+  margin-bottom: 3.5rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 177 90 / var(--tw-bg-opacity));
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 800px){
+  .cardSp{
+    display: flex;
+  }
+}
+
+.cardHeader{
+  width: 40%;
+  text-align: center;
+  font-family: Figtree;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+@media (max-width: 430px){
+  .cardHeader{
+    width: 80%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 380px){
+  .cardHeader{
+    width: 100%;
+  }
+}
+
+.cardContentSp{
+  -o-object-fit: cover;
+     object-fit: cover;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  line-height: 1.5em;
+  --tw-text-opacity: 1;
+  color: rgb(41 8 41 / var(--tw-text-opacity));
+}
+
+@media (max-width: 800px){
+  .cardContentSp{
+    width: 70%;
+  }
+}
+
+@media (max-width: 430px){
+  .cardContentSp{
+    width: 100%;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -1426,6 +1611,10 @@ html{
     margin-bottom: 6rem;
   }
 
+  .tab\:ml-0{
+    margin-left: 0px;
+  }
+
   .tab\:mt-14{
     margin-top: 3.5rem;
   }
@@ -1450,6 +1639,14 @@ html{
     display: none;
   }
 
+  .tab\:h-\[100\%\]{
+    height: 100%;
+  }
+
+  .tab\:h-\[100vh\]{
+    height: 100vh;
+  }
+
   .tab\:h-\[60vh\]{
     height: 60vh;
   }
@@ -1468,6 +1665,10 @@ html{
 
   .tab\:w-\[80\%\]{
     width: 80%;
+  }
+
+  .tab\:w-\[\]{
+    width: ;
   }
 
   .tab\:flex-col{
@@ -1490,9 +1691,27 @@ html{
     gap: 1rem;
   }
 
+  .tab\:rounded-\[3em\]{
+    border-radius: 3em;
+  }
+
+  .tab\:rounded-\[5em\]{
+    border-radius: 5em;
+  }
+
+  .tab\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .tab\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .tab\:px-5{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .tab\:text-center{
@@ -1535,9 +1754,19 @@ html{
     width: 90%;
   }
 
+  .mobile\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .mobile\:px-2{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .mobile\:px-5{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .mobile\:text-2xl{
@@ -1574,3 +1803,5 @@ html{
     line-height: 2.25rem;
   }
 }
+
+
