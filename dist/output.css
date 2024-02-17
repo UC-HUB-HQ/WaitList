@@ -1009,6 +1009,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-red-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-40{
   --tw-bg-opacity: 0.4;
 }
@@ -1021,6 +1026,10 @@ video {
   background-image: url('./Assets/study-group-3-african-people.webp');
 }
 
+.to-black-100{
+  --tw-gradient-to: #313031 var(--tw-gradient-to-position);
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -1031,6 +1040,10 @@ video {
 
 .bg-\[center_top_-10rem\]{
   background-position: center top -10rem;
+}
+
+.bg-repeat{
+  background-repeat: repeat;
 }
 
 .bg-no-repeat{
@@ -1611,6 +1624,11 @@ html{
     margin-bottom: 6rem;
   }
 
+  .tab\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .tab\:ml-0{
     margin-left: 0px;
   }
@@ -1691,6 +1709,10 @@ html{
     gap: 1rem;
   }
 
+  .tab\:gap-10{
+    gap: 2.5rem;
+  }
+
   .tab\:rounded-\[3em\]{
     border-radius: 3em;
   }
@@ -1712,6 +1734,11 @@ html{
   .tab\:px-5{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .tab\:px-14{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   .tab\:text-center{
@@ -1754,6 +1781,10 @@ html{
     width: 90%;
   }
 
+  .mobile\:w-\[100\%\]{
+    width: 100%;
+  }
+
   .mobile\:px-0{
     padding-left: 0px;
     padding-right: 0px;
@@ -1767,6 +1798,11 @@ html{
   .mobile\:px-5{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .mobile\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .mobile\:text-2xl{
