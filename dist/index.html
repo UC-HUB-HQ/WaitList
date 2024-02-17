@@ -13,21 +13,23 @@
   
   <script src="index.js"></script>
 </head>
-<body class="relative bg-black-bodyBgColor">
+<body class="relative overflow-x-hidden bg-black-bodyBgColor">
   <!-- HEADER -->
-  <header class="flex items-center justify-between px-12 py-6">
+  <header class="flex items-center justify-between px-12 py-6 tab:px-10 mobile:px-2">
       <div>
-        <img class="cursor-pointer" src="./Assets//uc hub logo.svg" alt="U.C HUB LOGO" loading="lazy">
+        <img class="cursor-pointer mobile:h-[30px]" src="./Assets//uc hub logo.svg" alt="U.C HUB LOGO" loading="lazy">
       </div>
       <div>
         <button class="btn">
-          <a href="#waitlist">Join the Waitlist</a>
+          <a href="#waitlist" class="text-xs">Join the Waitlist</a>
         </button>
       </div>
   </header>
   <!-- HEADER END -->
   <!-- HERO SECTION -->
-  <main class="flex justify-between items-center pt-[3em] px-12 "> 
+  <main class=" pt-[3em] px-12 tab:px-10"> 
+    <!-- DESKTOP -->
+    <section class="flex items-center justify-between desktop tab:hidden">
       <div class="w-[50%] hero-left ">
         <h1 class="flex flex-col gap-3 text-6xl font-bold font-body1">
           <span class="text-primary-500" id="dynamicHeaderText">No more failure</span>
@@ -64,15 +66,90 @@
         </section>
         <!--  -->
       </div>
+    </section>
+    <!-- END DESKTOP -->
+    <!-- MOBILE -->
+    <section class="hidden tab:block">
+      <div class="flex flex-col items-center justify-center gap-4">
+        <h1 class="text-4xl font-bold text-center text-primary-500 font-body1 tab:w-[80%] mobile:w-[90%] smobile:text-3xl">Improve your academics with one-on-one personal coaching</h1>
+        <div class="flex items-center justify-center text-center font-body2">
+          <p class="leading-7 text-black-100 tab:w-[70%] mobile:w-[90%] smobile:w-[100%]">Connect with an experienced senior to coach you through difficult courses and examinations with ease on UC Hub.</p>
+        </div>
+        <div class="">
+          <button class="btn font-body1">
+            <a href="#waitlist">Join the Waitlist</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- END MOBILE -->
   </main>
   <!-- HERO SECTION END -->
-  <!-- PEER TUTORING -->
-  <section class="relative h-[70vh] w-full mt-72 font-body1">
-        <img class="absolute top-0 left-0 z-0 object-cover w-full h-full" src="./Assets/teamwork.webp" alt="U.C HUB teamwork" loading="lazy"> 
-        <div class="absolute z-40 flex flex-col items-center justify-center w-full h-full px-12 bg-secondary-200Bg">
-          <div class="">
-            <h1 class="text-5xl font-semibold leading-[1.3em] w-[100%] text-white">Peer tutoring and coaching has several proven benefits for university students, both academically and personally.</h1>
-            <h3 class="mt-5 text-xl font-medium text-white">Join us as a student or coach.</h3>
+  <!--GALLARY MOBILE -->
+  <section class="hidden grid-cols-3 my-24 tab:grid tab:h-[60vh] mobile:h-[40vh]">
+    <div class="col-span-1 h-100% relative">
+      <img class="absolute top-0 left-0 z-0 object-cover w-full h-full" src="./Assets/portrait-young-african-woman-with-books-white_compressed 1.webp" alt="">
+    </div>
+    <div class="col-span-1 h-100% relative">
+      <img class="absolute top-0 left-0 z-0 object-cover w-full h-full" src="./Assets/friends-people-group-teamwork-diversity.webp" alt="">
+    </div>
+    <div class="col-span-1 h-100% relative">
+      <img class="absolute top-0 left-0 z-0 object-cover w-full h-full" src="./Assets/Graduate.webp" alt="">
+    </div>
+  </section>
+  <!--GALLERY END MOBILE -->
+  <!-- -->
+  <section class="hidden my-24 tab:flex-col tab:items-center tab:justify-center tab:gap-4 tab:flex">
+    <h2 class="text-3xl font-bold text-center text-primary-300 font-body1 tab:w-[60%] mobile:w-[90%] smobile:text-2xl smobile:w-[80%]">Top your academic game with UC Hub.</h2>
+    <p class="leading-7 text-center text-black-100 tab:w-[80%] mobile:w-[80%] smobile:w-[90%]">Academic Excellence is within your reach. Our coaches are excited to help you through any barriers by sharing their experience and expertise.</p>
+    <div class="">
+      <button class="btn font-body1">
+        <a href="#waitlist">Join the Waitlist</a>
+      </button>
+    </div>
+  </section>
+  <!-- -->
+  <!-- -->
+  <section class="flex-col items-center justify-center hidden py-12 tab:flex bg-primary-700 font-body1 ">
+    <h2 class="text-3xl font-bold text-center text-white mobile:w-[80%]">Get exactly what you need help with</h2>
+    <div class="flex flex-col gap-5 my-10">
+      <section class="flex items-center justify-between gap-6">
+        <div class="flex items-center justify-center w-10 h-10 bg-white rounded-full">
+          <span class="w-6 h-4 mb-1 -rotate-45 border-b-4 border-l-4 border-l-primary-300 border-b-primary-300 rounded-bl-md"></span>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-white font-body1">Coaching for specific topics</h3>
+        </div>
+      </section>
+      <section class="flex items-center justify-between gap-6">
+        <div class="flex items-center justify-center w-10 h-10 bg-white rounded-full">
+          <span class="w-6 h-4 mb-1 -rotate-45 border-b-4 border-l-4 border-l-primary-300 border-b-primary-300 rounded-bl-md"></span>
+        </div>
+        <h3 class="text-lg font-semibold text-white font-body1">Coaching for specific topics</h3>
+      </section>
+      <section class="flex items-center justify-between gap-6">
+        <div class="flex items-center justify-center w-10 h-10 bg-white rounded-full">
+          <span class="w-6 h-4 mb-1 -rotate-45 border-b-4 border-l-4 border-l-primary-300 border-b-primary-300 rounded-bl-md"></span>
+        </div>
+        <h3 class="text-lg font-semibold text-white font-body1">Coaching for specific topics</h3>
+      </section>
+    </div>
+    <div class="">
+      <button class="px-5 py-3 text-sm bg-white rounded-l-full rounded-r-full text-primary-100 font-body1">
+        <a href="#waitlist">Join the Waitlist</a>
+      </button>
+    </div>
+    
+  </section>
+  <!-- -->
+  <!-- -->
+  <section class="relative h-[70vh] w-full mt-72 tab:my-0  font-body1 overflow-hidden">
+        <img class="absolute top-0 left-0 z-0 object-cover w-full h-full tab:hidden" src="./Assets/teamwork.webp" alt="U.C HUB teamwork" loading="lazy">
+        <img class="absolute top-0 left-0 z-0 hidden object-cover w-full h-full tab:block" src="./Assets/smiling-young-male-student-sitting-staircase-showing-thumb-up-sign_compressed 1.webp" alt="U.C HUB teamwork" loading="lazy"> 
+        <div class="absolute z-40 flex flex-col items-center justify-center w-full h-full px-12 mobile:px-2 bg-secondary-200Bg">
+          <div class="flex-col items-center justify-center tab:flex">
+            <h1 class="text-5xl font-semibold leading-[1.3em] w-[100%] tab:text-4xl mobile:text-3xl tab:leading-[1.5em] text-white tab:text-center">Peer tutoring and coaching has several proven benefits for university students, both academically and personally.</h1>
+            <h3 class="mt-5 text-xl font-medium text-white tab:text-center">Join us as a student or coach.</h3>
             <div class="mt-10">
               <button class="btn">
                 <a href="#waitlist">Join the Waitlist</a>
@@ -83,25 +160,25 @@
   </section>
   <!-- PEER TUTORING END -->
   <!-- BRIDGE GAP -->
-  <section class="px-12 my-32 font-body1">
-      <div>
-        <h2 class="text-4xl font-semibold leading-[1.3em] w-[90%] text-primary-300">We aim to bridge achievement gaps by connecting the right high achievers and average students</h2>
+  <section class="px-12 my-32 tab:my-24 tab:px-10 mobile:px-2 font-body1">
+      <div class="items-center justify-center tab:flex">
+        <h2 class="text-4xl font-semibold leading-[1.3em] w-[90%] tab:text-center tab:text-3xl tab:w-[100%] mobile:text-2xl mobile:w-[85%] smobile:w-[100%] text-primary-300">We aim to bridge achievement gaps by connecting the right high achievers and average students</h2>
       </div>
-      <div class="flex items-center justify-between mt-20">
+      <div class="flex items-center justify-between mt-20 tab:flex-col tab:gap-12">
         <section class="flex flex-col items-center justify-center">
           <img class="rounded-full" src="./Assets/academic coaching.svg" alt="U.C Hub academic coaching" loading="lazy">
-          <h4 class="mt-1 text-xl font-medium text-black-100">Provide Academic Tutoring</h4>
+          <h4 class="mt-1 text-xl font-medium text-black-100 tab:w-[70%] text-center">Provide Academic Tutoring</h4>
         </section>
         <section class="flex flex-col items-center justify-center">
           <img class="rounded-full" src="./Assets/career mentoring.svg" alt="U.C Hub mentoring" loading="lazy">
-          <h4 class="mt-1 text-xl font-medium text-black-100">Provide Career Mentoring</h4>
+          <h4 class="mt-1 text-xl font-medium text-black-100 tab:w-[70%] text-center">Provide Career Mentoring</h4>
         </section>
         <section class="flex flex-col items-center justify-center">
           <img class="rounded-full" src="./Assets/achievement gaps.svg" alt="U.C Hub " loading="lazy">
-          <h4 class="mt-1 text-xl font-medium text-black-100">Bridge Achievement Gaps</h4>
+          <h4 class="mt-1 text-xl font-medium text-black-100 tab:w-[70%] text-center">Bridge Achievement Gaps</h4>
         </section>
       </div>
-      <div class="flex items-center justify-center mt-12 ">
+      <div class="flex items-center justify-center mt-12 tab:mt-14 ">
         <button class="btn">
           <a href="#waitlist">Join the Waitlist</a>
         </button>
@@ -109,67 +186,87 @@
   </section>
   <!-- END BRIDGE GAP -->
   <!--  -->
-  <section class="px-12 my-32">
-      <header class="font-body1">
-        <h5 class="mb-4">WHY U.C HUB?</h5>
-        <h2 class="text-4xl font-semibold leading-[1.3em] w-[90%] text-primary-300">Uni is very overwhelming, we all need help for a better experience</h2>
+  <section class="px-12 my-32 tab:my-24 tab:px-10 mobile:px-2">
+      <header class="flex-col items-center justify-center font-body1 tab:flex">
+        <h5 class="mb-4 tab:text-center">WHY U.C HUB?</h5>
+        <h2 class="text-4xl font-semibold leading-[1.3em] w-[90%] text-primary-300 tab:text-center tab:text-3xl mobile:text-2xl mobile:w-[80%] smobile:w-[100%]">Uni is very overwhelming, we all need help for a better experience</h2>
       </header>
-      <!-- Sec1 -->
-      <section class="grid items-center grid-cols-2 mt-16 font-body2">
-        <div class="col-span-1 text-wrap font-body2">
-          <section class="w-[90%] ml-auto flex flex-col gap-8 ">
-            <h4 class="font-medium text-black-100 w-[80%] leading-[1.5em] text-xl ">Become a better student with your personal accountability partner, who will help you with the challenges you face as a student, and track your progress as you go.</h4>
-            <h4 class="font-medium text-primary-200 w-[80%] leading-[1.5em] text-xl ">Ineffective lectures, expensive and inconvenient tutorials, lack of reliable materials, distractions, work, and bad time management can no longer stop you!</h4>
+      <div class="tab:mt-16 tab:w-[80%] mx-auto">
+        <!-- Sec1 -->
+        <section class="">
+          <!-- DESKTOP -->
+          <section class="grid items-center grid-cols-2 mt-16 font-body2 tab:hidden">
+            <div class="col-span-1 text-wrap font-body2">
+              <section class="w-[90%] ml-auto flex flex-col gap-8 ">
+                <h4 class="font-medium text-black-100 w-[80%] leading-[1.5em] text-xl ">Become a better student with your personal accountability partner, who will help you with the challenges you face as a student, and track your progress as you go.</h4>
+                <h4 class="font-medium text-primary-200 w-[80%] leading-[1.5em] text-xl ">Ineffective lectures, expensive and inconvenient tutorials, lack of reliable materials, distractions, work, and bad time management can no longer stop you!</h4>
+              </section>
+            </div>
+            <div class="flex items-center justify-center col-span-1">
+              <img class="h-[450px] rounded-full aspect-square object-cover" src="./Assets/friends-people-group-teamwork-diversity.webp" alt="U.C HUB teamwork-diversity" loading="lazy"> 
+            </div>
           </section>
-        </div>
-        <div class="flex items-center justify-center col-span-1">
-          <img class="h-[450px] rounded-full aspect-square object-cover" src="./Assets/friends-people-group-teamwork-diversity.webp" alt="U.C HUB teamwork-diversity" loading="lazy"> 
-        </div>
-      </section>
-      <!-- Sec1 End -->
-      <!-- Sec2 -->
-      <section class="grid items-center grid-cols-2 mt-16 font-body2">
-        <div class="flex items-center justify-center col-span-1">
-          <img  class="h-[450px] rounded-full aspect-square object-cover" src="./Assets/girls-looking-notebook.webp" alt="U.C HUB Scholars" loading="lazy" > 
-        </div>
-        <div class="col-span-1 text-wrap font-body2">
-          <section class="w-[90%] ml-auto flex flex-col gap-8 ">
-            <p class="font-medium text-black-100 w-[80%] leading-[1.5em] text-xl ">When your coach has similar experience with you, they can better guide you through your challenges and give you coping strategies.</p>
-            <h4 class="font-medium w-[80%] leading-[1.5em] text-xl ">
-              <span class=" text-primary-200">We’ll give you a list of like-minded coaches to choose from.</span> 
-              <span class="text-black-100">A list of colleagues that best suit your preferences. </span> <br>
-              <span class=" text-primary-200">Then you pick who you want to coach you.</span>
-            </h4>
+          <!-- DESKTOP END --> 
+          <!-- MOBILE -->
+          <section class="flex-col items-center justify-center hidden gap-8 card tab:flex">
+            <div class="text-3xl font-bold text-center cardHeader font-body1 text-black-100 w-[60%]">
+              <h1 class="">Learn from a senior in your field of study</h1>
+            </div>
+            <div class="cardImage">
+              <img  class="rounded-full aspect-square" src="./Assets/study-group-2-african-people.webp" alt="">
+            </div>
+            <div class="bg-green-700 cardContentContainer">
+              <h4 class="cardContent1">Get the most effective tutoring, mentoring, tips and tricks from a coach that can relate with you. </h4>
+              <h4 class="cardContent1">With UC Hub, you can easily find a like-minded coach.</h4>
+            </div>
           </section>
-        </div>
-      </section>
-      <!-- Sec2 End -->
-      <!-- Sec3 -->
-      <section class="grid items-center grid-cols-2 mt-16 font-body2">
-        <div class="col-span-1 text-wrap font-body2">
-          <section class="w-[90%] ml-auto flex flex-col gap-8">
-            <h4 class="font-medium text-black-100 w-[80%] leading-[1.5em] text-xl ">Studying with friends is definitely more fun.</h4>
-            <h4 class="font-medium text-primary-200 w-[80%] leading-[1.5em] text-xl ">U.C Hub has the option for getting group coaching with your friends.</h4>
-          </section>
-        </div>
-        <div class="flex items-center justify-center col-span-1">
-          <img class="h-[450px] rounded-full aspect-square object-cover" src="./Assets/students-studying-together.webp" alt="U.C HUB Students studying" loading="lazy"> 
-        </div>
-      </section>
-      <!-- Sec3 End -->
-      <!-- SECTION FOOTER -->
-      <section class=" mt-28 secFooter font-body1">
-        <h5 class="mb-10">YEAH, YOU SHOULD JOIN US AT UC HUB</h5>
-        <h2 class="flex flex-col gap-3 text-3xl">
-          <span class="font-medium text-black-100" id="question">Just need help studying for that exam?</span>
-          <span class="font-medium text-primary-300" id="answer">We’ve got a coach for you.</span>
-        </h2>
-        <div class="mt-12">
-          <button class="btn">
-            <a href="#waitlist">Join the Waitlist</a>
-          </button>
-        </div>
-      </section>
+          <!-- MOBILE END -->
+        </section>
+        <!-- Sec1 End -->
+        <!-- Sec2 -->
+        <section class="grid items-center grid-cols-2 mt-16 font-body2">
+          <div class="flex items-center justify-center col-span-1">
+            <img  class="h-[450px] rounded-full aspect-square object-cover" src="./Assets/girls-looking-notebook.webp" alt="U.C HUB Scholars" loading="lazy" > 
+          </div>
+          <div class="col-span-1 text-wrap font-body2">
+            <section class="w-[90%] ml-auto flex flex-col gap-8 ">
+              <p class="font-medium text-black-100 w-[80%] leading-[1.5em] text-xl ">When your coach has similar experience with you, they can better guide you through your challenges and give you coping strategies.</p>
+              <h4 class="font-medium w-[80%] leading-[1.5em] text-xl ">
+                <span class=" text-primary-200">We’ll give you a list of like-minded coaches to choose from.</span> 
+                <span class="text-black-100">A list of colleagues that best suit your preferences. </span> <br>
+                <span class=" text-primary-200">Then you pick who you want to coach you.</span>
+              </h4>
+            </section>
+          </div>
+        </section>
+        <!-- Sec2 End -->
+        <!-- Sec3 -->
+        <section class="grid items-center grid-cols-2 mt-16 font-body2">
+          <div class="col-span-1 text-wrap font-body2">
+            <section class="w-[90%] ml-auto flex flex-col gap-8">
+              <h4 class="font-medium text-black-100 w-[80%] leading-[1.5em] text-xl ">Studying with friends is definitely more fun.</h4>
+              <h4 class="font-medium text-primary-200 w-[80%] leading-[1.5em] text-xl ">U.C Hub has the option for getting group coaching with your friends.</h4>
+            </section>
+          </div>
+          <div class="flex items-center justify-center col-span-1">
+            <img class="h-[450px] rounded-full aspect-square object-cover" src="./Assets/students-studying-together.webp" alt="U.C HUB Students studying" loading="lazy"> 
+          </div>
+        </section>
+        <!-- Sec3 End -->
+        <!-- SECTION FOOTER -->
+        <section class=" mt-28 secFooter font-body1">
+          <h5 class="mb-10">YEAH, YOU SHOULD JOIN US AT UC HUB</h5>
+          <h2 class="flex flex-col gap-3 text-3xl">
+            <span class="font-medium text-black-100" id="question">Just need help studying for that exam?</span>
+            <span class="font-medium text-primary-300" id="answer">We’ve got a coach for you.</span>
+          </h2>
+          <div class="mt-12">
+            <button class="btn">
+              <a href="#waitlist">Join the Waitlist</a>
+            </button>
+          </div>
+        </section>
+      </div>
   </section>
   <!--  -->
   <!--  -->
@@ -184,7 +281,7 @@
   <!--  -->
   <!--  -->
   <section class="relative py-10 my-32 overflow-hidden bg-secondary-100">
-      <div class=" flex justify-between overflow-hidden rounded-[100px] bg-secondary-300 w-[85%] mx-auto">
+      <div class=" flex justify-between overflow-hidden rounded-[100px] bg-secondary-300 w-[85%] md:w-[90%] mx-auto">
         <section class="w-[50%] py-12 ">
           <div class="w-[80%] ml-auto "> 
             <div class="font-body1">
@@ -204,7 +301,7 @@
           </div>
         </section>
         <section class="relative w-[50%]  flex justify-center items-center ">
-          <div class="absolute bg-[url('./Assets/study-group-3-african-people.webp')] bg-no-repeat bg-cover bg-[center_right_-2rem]  h-[700px] w-[700px] rounded-full ml-28"></div>
+          <div class="absolute bg-[url('./Assets/study-group-3-african-people.webp')] bg-no-repeat bg-cover bg-[center_right_-2rem] rounded-full ml-28  h-[800px] w-[800px] lg:h-[700px] lg:w-[700px] md:h-[600px] md:w-[600px]"></div>
           <img src="./Assets/study-group-3-african-people.webp" class="hidden" alt="U.C HUB TUTORS">
         </section>
       </div>

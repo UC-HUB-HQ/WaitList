@@ -10,11 +10,13 @@ module.exports = {
       // => @media (max-width: 1440px) { ... }
       'md': {'max': '1030px'},
       // => @media (max-width: 1030px) { ... }
-      'tab': {'max': '768px'},
+      'tab': {'max': '800px'},
       // => @media (max-width: 768px) { ... }
-      'tab-sm': {'max': '600px'},
+      'sm-tab': {'max': '600px'},
       // => @media (max-width: 600px) { ... }
-      'mobile': {'max': '360px'},
+      'mobile': {'max': '430px'},
+      // => @media (max-width: 430px) { ... }
+      'smobile': {'max': '380px'},
       // => @media (max-width: 360px) { ... }
     },
 
@@ -51,6 +53,7 @@ module.exports = {
           "400": "#5896F4",
           "500": "#033178",
           "600": "#022150",
+          "700": "#0452C7",
           "ContactBg": "rgba(205, 224, 252, 0.30)",
           'formBg': "rgba(205, 224, 252, 0.30)"
         },
@@ -58,6 +61,7 @@ module.exports = {
           "100": "#CC7306",
           "200Bg": "rgba(49, 28, 1, 0.5)",
           "300": "#FDE8CD",
+          "cardBg": "#5E1313",
         },
         "tertiary": {
           "100": "#310A31",

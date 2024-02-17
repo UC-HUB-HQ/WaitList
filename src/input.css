@@ -52,3 +52,14 @@ html{
 .submitBtn{
     @apply px-5 py-4 text-sm text-white rounded-l-full rounded-r-full bg-primary-100 font-body1
 }
+.card{
+    @apply bg-secondary-cardBg
+}
+
+.cardContentContainer{
+    @apply flex justify-center items-center flex-col gap-4 
+}
+
+.cardContent1{
+    @apply text-center text-black-100 leading-[1.5em] text-xl tab:w-[80%]
+}
