@@ -23,12 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const dynamicHeaderTextSelection = ["No more failure", "Earn as a student", "Improve your skills", "Optimize your time"]
     let firstAnimationDone = false;
     let currentIndex = 1;
-    console.log(firstAnimationDone)
     setInterval( () => {
         firstAnimationDone = true
         currentIndex = (currentIndex + 1) % dynamicHeaderTextSelection.length
         changeTextWithAnimation(dynamicHeaderText, dynamicHeaderTextSelection, currentIndex)
-        console.log(firstAnimationDone)
     }, 5000);
 
 
