@@ -340,10 +340,10 @@
   </section>
   <!--  -->
   <!--  -->
-  <section class="relative py-10 my-32 tab:my-24 tab:px-10 mobile:px-2 overflow-hidden bg-secondary-100 tab:h-[100vh]">
+  <section class="relative py-10 my-32 tab:my-24 tab:px-10 mobile:px-2 overflow-hidden bg-secondary-100 tab:h-full">
       <div class=" flex justify-between tab:flex-col tab:justify-center tab:items-center overflow-hidden rounded-[100px] bg-secondary-300 w-[85%] md:w-[90%] mx-auto">
         <section class="w-[50%] tab:w-[100%] py-12 ">
-          <div class="w-[80%] tab:w-[100%] ml-auto tab:flex justify-center items-center flex-col text-center bg-red-800 tab:px-5"> 
+          <div class="w-[80%] tab:w-[100%] ml-auto tab:flex justify-center items-center flex-col text-center tab:px-5"> 
             <div class="font-body1">
               <h5 class="text-xl font-medium uppercase text-tertiary-100">coach with us</h5>
               <h2 class="text-4xl font-semibold text-tertiary-200 w-[80%] tab:w-[100%] mt-4">
@@ -360,9 +360,9 @@
             </div>
           </div>
         </section>
-        <section class="relative w-[50%] tab:w-[100%] tab:h-[100%]  flex justify-center items-center ">
-          <div class="absolute bg-[url('./Assets/study-group-3-african-people.webp')] bg-no-repeat bg-cover bg-[center_right_-2rem] rounded-full ml-28 tab:ml-0  h-[800px] w-[800px] lg:h-[700px] lg:w-[700px] md:h-[600px] md:w-[600px]"></div>
-          <img src="./Assets/study-group-3-african-people.webp" class="hidden" alt="U.C HUB TUTORS">
+        <section class="relative w-[50%] tab:w-[100%] flex justify-center items-center ">
+          <div class="absolute bg-[url('./Assets/study-group-3-african-people.webp')] bg-no-repeat bg-cover bg-[center_right_-2rem] rounded-full ml-28 tab:ml-0  h-[800px] w-[800px] lg:h-[700px] lg:w-[700px] md:h-[600px] md:w-[600px] tab:hidden"></div>
+          <img src="./Assets/study-group-3-african-people.webp" class="hidden tab:block rounded-tr-[20%] rounded-t-[30%] rounded-tl-[20%] -mb-8 w-[150vw] mx-auto h-[400px] object-cover" alt="U.C HUB TUTORS">
         </section>
       </div>
   </section>
@@ -424,7 +424,7 @@
   <!-- WAITLIST FORM -->
   <section id="waitlist" class="flex items-center justify-between px-12 my-32 tab:my-24 tab:px-0 mobile:px-0">
       <div class="flex items-start justify-between w-full mx-auto tab:rounded-[5em] tab:flex-col tab:gap-10 rounded-3xl p-14 mobile:px-4  bg-primary-formBg">
-        <div class="w-[50%] tab:w-[100%] tab:flex justify-center items-center flex-col text-center">
+        <div class="w-[50%] tab:w-[100%] tab:flex justify-center items-center flex-col tab:text-center">
           <h1 class="text-5xl font-semibold leading-[1.3em] w-[80%] text-primary-100 tab:text-3xl tab:w-[100%]">Begin your journey to academic excellence</h1>
           <h4 class="mt-4 text-2xl text-primary-100">Get notified when we launch</h4>
         </div>
@@ -445,13 +445,13 @@
   </section>
   <!-- WAITLISTEND -->
   <!-- FOOTER SECTION -->
-  <footer class="text-white bg-tertiary-200 p-14 font-body1">
-      <section class="grid grid-cols-3 gap-8">
+  <footer class="text-white bg-tertiary-200 p-14 tab:px-4 font-body1">
+      <section class="grid grid-cols-3 gap-8 tab:grid-cols-1 tab:flex tab:flex-col tab:gap-20">
         <div class="col-span-1">
           <img src="./Assets/uc hub logo.svg" alt="U.C Hub logo" loading="lazy">
         </div>
-        <div class="flex flex-col col-span-1 gap-6">
-          <h6>Need more clarity? Or got any suggestions</h6>
+        <div class="flex flex-col col-span-1 gap-6 tab:text-center tab:justify-center tab:items-center">
+          <h6 class="tab:w-[80%]">Need more clarity? Or got any suggestions</h6>
           <div class="flex flex-col gap-3">
             <div class="flex items-center gap-4">
               <img class="h-4" src="./Assets/teenyicons_phone-solid.svg" alt="U.C Hub phone number" loading="lazy">
@@ -463,12 +463,12 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-end col-span-1">
-          <p class="text-primary-500 w-[70%] ">Promoting inclusiveness by bridging achievement gaps</p>
+        <div class="flex justify-end col-span-1 tab:text-center">
+          <p class="text-primary-400 w-[70%] tab:w-[100%] ">Promoting inclusiveness by bridging achievement gaps</p>
         </div>
       </section>
-      <section class="mt-20">
-        <p class="text-black-200">&copy 2024 UC Hub, All rights reserved</p>
+      <section class="mt-20 text-center">
+        <p class="text-black-200">&copy 2024 U.C Hub, All rights reserved</p>
       </section>
   </footer>
   <!-- FOOTER END-->
