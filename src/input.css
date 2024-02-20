@@ -96,4 +96,11 @@ html{
     @apply text-center text-tertiary-300 leading-[1.5em] text-base tab:w-[70%] font-normal mobile:text-lg mobile:w-[100%] object-cover
 }
 
+/* .fadeInLeft{
+    @apply transition-transform ease-linear translate-x-[0%] duration-500 opacity-100
+}
+
+.currentFadeInLeft{
+    @apply translate-x-[100%] opacity-0
+} */
 

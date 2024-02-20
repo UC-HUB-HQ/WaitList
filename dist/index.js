@@ -60,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const id = faqDropDown.dataset.id;
             const faqAnswer = document.querySelector(`#faq${id}`);
 
-            // console.log(faqDropDown.classList)
             if (faqDropDown.classList.contains('rotate-180')){
                 
                 // 
@@ -81,36 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
-
-
-
-
-
-
-    // REVEAL ANIMATION ONSCROLL 
-
-    function reveal(name, item){
-        var windowheight = window.innerHeight
-        var revealtop = item.getBoundingClientRect().top
-        var reavealpoint = 0
-        if (revealtop < windowheight - reavealpoint){
-            item.classList.add(name)
-        }
-        else{
-            item.classList.remove(name)
-        }
-    }
-
-
-     // REVEAL TECH-STACK
-     function revealGallery(){
-        const gallery = document.querySelector('.gallery')
-        reveal('translate-x-[0%]', gallery)
-    }
-
-    window.addEventListener('scroll',revealGallery)
 
 
 })

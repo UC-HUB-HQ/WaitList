@@ -792,21 +792,6 @@ video {
   width: 100%;
 }
 
-.translate-x-16{
-  --tw-translate-x: 4rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[100\%\]{
-  --tw-translate-x: 100%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[0\%\]{
-  --tw-translate-x: 0%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .-rotate-45{
   --tw-rotate: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -843,22 +828,6 @@ video {
 
 .animate-newContent{
   animation: fadeIn 1s linear;
-}
-
-@keyframes bounce{
-  0%, 100%{
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50%{
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.animate-bounce{
-  animation: bounce 1s infinite;
 }
 
 .cursor-pointer{
@@ -1292,10 +1261,6 @@ video {
   transition-duration: 800ms;
 }
 
-.ease-linear{
-  transition-timing-function: linear;
-}
-
 html{
   scroll-behavior: smooth;
 }
@@ -1619,6 +1584,14 @@ html{
   }
 }
 
+/* .fadeInLeft{
+    @apply transition-transform ease-linear translate-x-[0%] duration-500 opacity-100
+}
+
+.currentFadeInLeft{
+    @apply translate-x-[100%] opacity-0
+} */
+
 @media (max-width: 1440px){
   .lg\:h-\[700px\]{
     height: 700px;
@@ -1824,11 +1797,6 @@ html{
     padding-right: 0px;
   }
 
-  .mobile\:px-2{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
   .mobile\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1883,5 +1851,4 @@ html{
     line-height: 1.75rem;
   }
 }
-
 
