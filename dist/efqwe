@@ -1,0 +1,63 @@
+    function reveal(name, item){
+        var windowheight = window.innerHeight
+        var revealtop = item.getBoundingClientRect().top
+        var reavealpoint = 0
+        if (revealtop < windowheight - reavealpoint){
+            item.classList.add(name)
+        }
+        else{
+            item.classList.remove(name)
+        }
+    }
+
+    // REVEAL NAVBAR LINKS
+    function revealNavbarLinks(){
+        document.querySelectorAll('.nav_List').forEach(function(nav_List){
+            reveal('reveal_links', nav_List)
+        })
+    }
+    setTimeout(revealNavbarLinks, (interval * 100) + 500)
+
+
+    // REVEAL TECH-STACK
+    function revealTechStack(){
+        document.querySelectorAll('.tool_item').forEach(function(tool_item){
+            reveal('tools_reveal', tool_item)
+        })
+    }
+    window.addEventListener('scroll',revealTechStack)
+
+
+
+
+
+
+
+
+
+
+
+    main header .nav_right nav ul .reveal_links {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+
+
+
+
+
+    main header .nav_right nav ul li{
+        list-style-type: none;
+        margin-left: 2.3em;
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    
+    main header .nav_right nav ul li:nth-child(1){
+        transition: 0.6s ease-in-out;
+    }
+     
+    main header .nav_right nav ul li:nth-child(2){
+        transition: 0.6s  0.3s ease-in-out;
+    }

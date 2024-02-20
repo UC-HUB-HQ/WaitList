@@ -2,6 +2,30 @@
 module.exports = {
   content: ["./dist/**/*.{html,js}"],
   theme: {
+
+    screens: {
+      'xlg': {'max': '1920px'},
+      // => @media (max-width: 1920px) { ... }
+      'lg': {'max': '1440px'},
+      // => @media (max-width: 1440px) { ... }
+      'md': {'max': '1030px'},
+      // => @media (max-width: 1030px) { ... }
+      'tab': {'max': '800px'},
+      // => @media (max-width: 768px) { ... }
+      'sm-tab': {'max': '600px'},
+      // => @media (max-width: 600px) { ... }
+      'mobile': {'max': '430px'},
+      // => @media (max-width: 430px) { ... }
+      'smobile': {'max': '380px'},
+      // => @media (max-width: 360px) { ... }
+    },
+
+    fontFamily:{
+      "body1": ["Figtree"],
+      "body2": ["Public Sans"]
+
+    },
+
     extend: {
 
       animation: {
@@ -21,12 +45,6 @@ module.exports = {
         }
 			},
 
-      fontFamily:{
-        "body1": ["Figtree"],
-        "body2": ["Public Sans"]
-
-      },
-
       colors:{
         "primary": {
           "100": "#0562EF",
@@ -35,6 +53,7 @@ module.exports = {
           "400": "#5896F4",
           "500": "#033178",
           "600": "#022150",
+          "700": "#0452C7",
           "ContactBg": "rgba(205, 224, 252, 0.30)",
           'formBg': "rgba(205, 224, 252, 0.30)"
         },
@@ -42,10 +61,14 @@ module.exports = {
           "100": "#CC7306",
           "200Bg": "rgba(49, 28, 1, 0.5)",
           "300": "#FDE8CD",
+          "cardBg": "#E9E4DE",
+          "400": "#F8B15A"
+
         },
         "tertiary": {
           "100": "#310A31",
-          "200": "#190519"
+          "200": "#190519",
+          "300": "#290829"
         },
         "black": {
           "100": "#313031",
@@ -59,4 +82,10 @@ module.exports = {
   },
   plugins: [],
 }
+
+
+
+
+
+
 
