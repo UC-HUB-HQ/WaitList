@@ -60,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const id = faqDropDown.dataset.id;
             const faqAnswer = document.querySelector(`#faq${id}`);
 
-            // console.log(faqDropDown.classList)
             if (faqDropDown.classList.contains('rotate-180')){
                 
                 // 
@@ -78,6 +77,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
     })
+
+
+
 
 
 })

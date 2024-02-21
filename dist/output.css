@@ -1012,16 +1012,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
-}
-
-.bg-green-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-40{
   --tw-bg-opacity: 0.4;
 }
@@ -1476,9 +1466,9 @@ html{
   -o-object-fit: cover;
      object-fit: cover;
   text-align: center;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
   line-height: 1.5em;
   --tw-text-opacity: 1;
   color: rgb(49 48 49 / var(--tw-text-opacity));
@@ -1502,9 +1492,9 @@ html{
   -o-object-fit: cover;
      object-fit: cover;
   text-align: center;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
   line-height: 1.5em;
   --tw-text-opacity: 1;
   color: rgb(49 48 49 / var(--tw-text-opacity));
@@ -1572,9 +1562,9 @@ html{
   -o-object-fit: cover;
      object-fit: cover;
   text-align: center;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
   line-height: 1.5em;
   --tw-text-opacity: 1;
   color: rgb(41 8 41 / var(--tw-text-opacity));
@@ -1592,6 +1582,47 @@ html{
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+}
+
+.getHelpSection{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.getHelpSectionChild1{
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.getHelpSectionSpan{
+  margin-bottom: 0.25rem;
+  height: 1rem;
+  width: 1.5rem;
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-bottom-left-radius: 0.375rem;
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+  border-left-color: rgb(3 65 159 / var(--tw-border-opacity));
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(3 65 159 / var(--tw-border-opacity));
+}
+
+.getHelpSectionHeader{
+  font-family: Figtree;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (max-width: 1440px){
@@ -1674,6 +1705,10 @@ html{
     width: 100%;
   }
 
+  .tab\:w-\[40\%\]{
+    width: 40%;
+  }
+
   .tab\:w-\[60\%\]{
     width: 60%;
   }
@@ -1684,18 +1719,6 @@ html{
 
   .tab\:w-\[80\%\]{
     width: 80%;
-  }
-
-  .tab\:w-\[50\%\]{
-    width: 50%;
-  }
-
-  .tab\:w-\[40\%\]{
-    width: 40%;
-  }
-
-  .tab\:w-\[10\%\]{
-    width: 10%;
   }
 
   .tab\:grid-cols-1{
@@ -1722,16 +1745,12 @@ html{
     gap: 3rem;
   }
 
-  .tab\:gap-20{
-    gap: 5rem;
+  .tab\:gap-14{
+    gap: 3.5rem;
   }
 
   .tab\:gap-4{
     gap: 1rem;
-  }
-
-  .tab\:gap-14{
-    gap: 3.5rem;
   }
 
   .tab\:rounded-\[5em\]{
@@ -1790,6 +1809,10 @@ html{
     width: 100%;
   }
 
+  .mobile\:w-\[70\%\]{
+    width: 70%;
+  }
+
   .mobile\:w-\[80\%\]{
     width: 80%;
   }
@@ -1802,26 +1825,9 @@ html{
     width: 90%;
   }
 
-  .mobile\:w-\[\]{
-    width: ;
-  }
-
-  .mobile\:w-0{
-    width: 0px;
-  }
-
-  .mobile\:w-\[70\%\]{
-    width: 70%;
-  }
-
   .mobile\:px-0{
     padding-left: 0px;
     padding-right: 0px;
-  }
-
-  .mobile\:px-2{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
   }
 
   .mobile\:px-4{
@@ -1878,5 +1884,3 @@ html{
     line-height: 1.75rem;
   }
 }
-
-
