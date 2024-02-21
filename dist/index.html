@@ -436,6 +436,7 @@
           <h4 class="mt-4 text-2xl text-primary-100">Get notified when we launch</h4>
         </div>
         <div class=" w-[50%] tab:w-[80%] tab:mx-auto mobile:w-[100%] ">
+          <iframe id="hiddenConfirm" name="hiddenConfirm" class="hidden" onload="if(submitted){window.location='thanks.html';}"></iframe>
           <form method="post" target="hiddenConfirm" onsubmit="submitted = true"  class="flex flex-col w-[80%] tab:w-[100%] mx-auto gap-5" action="https://docs.google.com/forms/d/e/1FAIpQLSczakRpfC2m9G2WwPhGZKV4HXwbcTXhEH5l07aqqf1y92gxBQ/formResponse">
             <input class="inputFields" type="text" placeholder="First Name" required name="entry.1336064820">
             <input class="inputFields" type="email" placeholder="Enter email" required name="entry.1982265022">
@@ -444,9 +445,8 @@
               <option value="Tutor">Tutor</option>
               <option value="Student">Student</option>
             </select>
-            <input class="cursor-pointer submitBtn" type="submit">
+            <button class="cursor-pointer submitBtn" type="submit" onclick="submitted = true">Submit</button>
           </form>
-          <iframe id="hiddenConfirm" name="hiddenConfirm" class="hidden" onload="if(submitted){window.location='thanks.html';}"></iframe>
         </div>
       </div>
   </section>
