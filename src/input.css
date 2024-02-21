@@ -96,11 +96,18 @@ html{
     @apply text-center text-tertiary-300 leading-[1.5em] text-base tab:w-[70%] font-normal mobile:text-lg mobile:w-[100%] object-cover
 }
 
-/* .fadeInLeft{
-    @apply transition-transform ease-linear translate-x-[0%] duration-500 opacity-100
+.getHelpSection{
+    @apply flex items-center justify-between gap-6
 }
 
-.currentFadeInLeft{
-    @apply translate-x-[100%] opacity-0
-} */
+.getHelpSectionChild1{
+    @apply flex items-center justify-center w-10 h-10 bg-white rounded-full
+}
 
+.getHelpSectionSpan{
+    @apply w-6 h-4 mb-1 -rotate-45 border-b-4 border-l-4 border-l-primary-300 border-b-primary-300 rounded-bl-md
+}
+
+.getHelpSectionHeader{
+    @apply text-lg font-semibold text-white font-body1
+}
