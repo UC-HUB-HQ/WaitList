@@ -97,11 +97,11 @@ html{
 }
 
 .getHelpSection{
-    @apply flex items-center justify-between gap-6
+    @apply flex items-center gap-6
 }
 
 .getHelpSectionChild1{
-    @apply flex items-center justify-center w-10 h-10 bg-white rounded-full
+    @apply flex items-center justify-center w-10 h-10 bg-white rounded-full 
 }
 
 .getHelpSectionSpan{
@@ -109,5 +109,5 @@ html{
 }
 
 .getHelpSectionHeader{
-    @apply text-lg font-semibold text-white font-body1
+    @apply text-lg font-semibold text-white font-body1 text-left
 }
