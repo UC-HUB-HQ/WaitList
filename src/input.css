@@ -111,3 +111,14 @@ html{
 .getHelpSectionHeader{
     @apply text-lg font-semibold text-white font-body1 text-left
 }
+
+.shiftRight{
+    @apply translate-x-[100%] opacity-0
+}
+
+.shifLeft{
+    @apply -translate-x-[100%] opacity-0
+}
+.fadeIn{
+    @apply translate-x-[0%] opacity-100 duration-500 transition-all
+}
