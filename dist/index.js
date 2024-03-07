@@ -82,4 +82,58 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
+
+
+    function reveal(name,custom, item){
+        var windowheight = window.innerHeight
+        var revealtop = item.getBoundingClientRect().top
+        var reavealpoint = 0
+        if (revealtop < windowheight - reavealpoint){
+            item.classList.add(name)
+            item.classList.remove(custom)
+        }
+        else{
+            item.classList.remove(name)
+            item.classList.add(custom)
+        }
+    }
+
+    // 
+    function revealAcademicGame(){
+        const academicGame = document.querySelector('.academicGame')
+        reveal('fadeIn', 'shiftRight', academicGame)
+    }
+
+    // 
+    function revealReasons(){
+        document.querySelectorAll('.reasons').forEach( (reason) => {
+            reveal('fadeIn', 'shiftRight', reason)
+        })
+    }
+
+    // 
+    function revealBrigeGapSvg(){
+        document.querySelectorAll('.brigeGapSvgs').forEach( (brigeGapSvg) => {
+            reveal('fadeIn', 'shiftRight', brigeGapSvg)
+        })
+    }
+    
+
+
+
+
+    window.addEventListener('scroll', () => {
+        revealAcademicGame();
+        revealReasons();
+        revealBrigeGapSvg();
+
+    })
+    
+
+
+
+
+
 })
