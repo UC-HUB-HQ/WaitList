@@ -122,8 +122,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
 
 
-
-
     window.addEventListener('scroll', () => {
         revealAcademicGame();
         revealReasons();
