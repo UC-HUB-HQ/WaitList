@@ -128,6 +128,12 @@ document.addEventListener('DOMContentLoaded', () => {
         revealBrigeGapSvg();
 
     })
+
+
+    // Close Modal
+    document.querySelector('.closeModalBtn').addEventListener('click', () => {
+        document.querySelector('.modal').style.display = 'none'
+    })
     
 
 
