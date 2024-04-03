@@ -46,11 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 5000);
 
 
-
-
-
-
-
     
     // REVEALING FAQ QUESTION'S ANSWER;
 
@@ -77,13 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
     })
-
-
-
-
-
-
-
 
 
     function reveal(name,custom, item){
@@ -128,7 +116,26 @@ document.addEventListener('DOMContentLoaded', () => {
         revealBrigeGapSvg();
 
     })
+
+
+    // Close Modal
+    document.querySelector('.closeModalBtn').addEventListener('click', () => {
+        document.querySelector('.modal').style.display = 'none'
+    })
     
+
+    if(localStorage.getItem('waitlist')){
+        document.querySelector('#fakeBtn').style.display = 'block';
+        document.querySelector('#realBtn').style.display = 'none';
+    }
+    else{
+        document.querySelector('#realBtn').style.display = 'block';
+        document.querySelector('#fakeBtn').style.display = 'none';
+    }
+
+    document.querySelector('#fakeBtn').addEventListener('click', () => {
+        alert("We see you're eager to join! Rest assured, you're already on the waitlist.")
+    })
 
 
 
