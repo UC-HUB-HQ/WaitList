@@ -15,19 +15,48 @@
   
   <script src="index.js"></script>
 </head>
-<body class="relative overflow-x-hidden bg-black-bodyBgColor">
+<body class="relative overflow-x-hidden bg-black-bodyBgColor ">
   <!-- HEADER -->
   <header class="flex items-center justify-between px-12 py-6 tab:px-10 mobile:px-4">
       <div>
         <img class="cursor-pointer mobile:h-[30px]" src="./Assets//uc hub logo.svg" alt="U.C HUB LOGO" loading="lazy">
       </div>
       <div>
-        <button class="btn">
-          <a href="#waitlist" class="text-xs">Join the Waitlist</a>
-        </button>
+       <nav>
+        <ul class="flex items-center justify-between gap-6">
+            <div class="flex items-center justify-between gap-6 tab:hidden">
+                <li>
+                  <a class="font-semibold border-2 border-transparent border-b-primary-300 text-primary-300" href="https://uchubwaitlist.netlify.app/">Home</a>
+                </li>
+                <li>
+                  <a class="font-semibold " href="https://uchubsim.netlify.app/">CGPA Simulator</a>
+                </li>
+            </div>
+            <li>
+              <button class="btn">
+                <a href="#waitlist" class="text-xs">Join the Waitlist</a>
+              </button>
+            </li>
+        </ul>
+       </nav>
       </div>
   </header>
   <!-- HEADER END -->
+  <!--MOBILE NAVBAR -->
+  <section class="hidden gap-6 tab:block">
+    <nav>
+      <ul class="flex items-center justify-center mt-3 w-[60%] mx-auto  gap-6">
+        <li>
+          <a class="font-semibold border-2 border-transparent border-b-primary-300 text-primary-300" href="https://uchubwaitlist.netlify.app/">Home</a>
+        </li>
+        <li>
+          <a class="font-semibold " href="https://uchubsim.netlify.app/">CGPA Simulator</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+  <!--MOBILE NAVBAR END-->
+  
   <!-- HERO SECTION -->
   <main class=" pt-[3em] px-12 tab:px-10"> 
     <!-- DESKTOP -->
@@ -38,7 +67,7 @@
           <span class="text-primary-600">with U.C Hub</span>
         </h1>
         <div class="flex flex-col gap-2 mt-8 font-body2">
-          <p class="heroPtag">In the University, tutoring, guidance, mentoring, tips and tricks, are best given from experience.</p>
+          <p class="heroPtag">In college, tutoring, guidance, mentoring, tips and tricks, are best given from experience.</p>
           <p class="heroPtag">Connect with a verified expert colleague who will provide easy and convenient coaching to get you the results you want.</p>
         </div>
         <div class="mt-16">
